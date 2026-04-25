@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resume Analyst</title>
+  <title>CV Sense</title>
   <link rel="stylesheet" href="style.css" />
 
   <!-- PDF.js — extracts text from PDF in the browser, free & open source -->
@@ -12,8 +12,8 @@
 <body>
 
   <header>
-    <h1>AI Resume Analyzer</h1>
-    <p>AI-powered analyser according to job requirement</p>
+    <h1>CV Sense</h1>
+    <p>AI-powered CV analyser according to job requirement</p>
   </header>
 
   <div class="container">
@@ -22,7 +22,7 @@
     <div id="input-section">
 
       <div class="card">
-        <div class="card-label">Your Resume (PDF)</div>
+        <div class="card-label">Your CV (PDF)</div>
         <div class="upload-zone" id="dropzone">
           <input type="file" id="pdf-input" accept=".pdf" />
           <div class="upload-icon">📄</div>
@@ -39,7 +39,7 @@
         <textarea id="job-desc" placeholder="Paste the job requirements here…&#10;&#10;e.g. Required: Python, SQL, REST APIs, 2+ years experience…"></textarea>
       </div>
 
-      <button class="analyze-btn" id="analyze-btn" disabled>Analyze Resume</button>
+      <button class="analyze-btn" id="analyze-btn" disabled>Analyze CV</button>
       <div id="error-msg"></div>
       <p class="page-footer">Made with ❤️ by Souvik (@cyberoxic)</p>
 
