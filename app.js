@@ -286,6 +286,7 @@ function renderResults(r) {
 
     <div style="text-align:center;padding-bottom:2rem">
       <button class="reset-btn" id="reset-btn">← Analyze another resume</button>
+      <p class="page-footer">Made with ❤️ by Souvik (@cyberoxic)</p>
     </div>`;
 
   document.getElementById('results-section').style.display = 'block';
