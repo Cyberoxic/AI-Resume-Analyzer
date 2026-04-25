@@ -253,6 +253,14 @@ textarea::placeholder { color: var(--muted); }
 }
 .reset-btn:hover { background: var(--accent-light); color: var(--accent); border-color: var(--accent); }
 
+.page-footer {
+  margin-top: 1.25rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
 /* ═══════════════════════════════════════════
    UNIFORM SPACING FIXES
    ═══════════════════════════════════════════ */
@@ -266,7 +274,7 @@ textarea::placeholder { color: var(--muted); }
 #input-section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 /* Space between input section and the Analyze button */
@@ -276,12 +284,12 @@ textarea::placeholder { color: var(--muted); }
 
 /* 3. Result section — every direct child gets uniform top margin */
 #results-section > * + * {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 /* 4. Two-col grid — equal gap inside both columns */
 .two-col {
-  gap: 2rem;
+  gap: 1rem;
 }
 
 /* 5. Cards inside two-col — if they stack on mobile, keep uniform gap */
