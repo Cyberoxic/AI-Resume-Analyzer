@@ -14,7 +14,7 @@ export default async (req) => {
       });
 
     if (resumeText.length < 100)
-      return new Response(JSON.stringify({ error: "Resume text too short. Make sure it's not a scanned image PDF." }), {
+      return new Response(JSON.stringify({ error: "CV text too short. Make sure it's not a scanned image PDF." }), {
         status: 400, headers: { 'Content-Type': 'application/json' }
       });
 
