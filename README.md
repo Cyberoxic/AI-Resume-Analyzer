@@ -28,12 +28,14 @@ resume-analyzer-groq/
 
 ## How to Run
 
-### Option A — VS Code Live Server (recommended)
+### Option A — visit [CVsense](https://cvsense.netlify.app/) (recommended)
+
+### Option B — VS Code Live Server (recommended)
 1. Open the `resume-analyzer-groq` folder in VS Code
 2. Install **Live Server** extension (by Ritwick Dey)
 3. Right-click `index.html` → **Open with Live Server**
 
-### Option B — Just open the file
+### Option C — Just open the file
 Double-click `index.html` in Chrome, Edge, or Firefox.
 
 ---
@@ -51,8 +53,8 @@ Double-click `index.html` in Chrome, Edge, or Firefox.
 ## Free Tier Limits (Groq)
 
 | Model               | Requests/min | Tokens/min  | Requests/day |
-|---------------------|-------------|-------------|--------------|
-| llama-3.3-70b       | 30          | 6,000       | 1,000        |
+|---------------------|--------------|-------------|--------------|
+| llama-3.3-70b       | 30           | 6,000       | 1,000        |
 
 More than enough for personal use.
 
@@ -83,8 +85,3 @@ More than enough for personal use.
   - Fix: Use a text-based PDF resume, not a scanned photo
 - Groq free tier has a daily limit of 1,000 requests
 
-## Next Steps
-
-- Add Node.js backend to hide API key for public deployment
-- Deploy free on Vercel or Netlify
-- Add export-to-PDF for the analysis report
