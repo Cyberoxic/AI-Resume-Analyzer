@@ -250,7 +250,7 @@ function renderResults(r) {
           <div class="score-number">${r.score}<span style="font-size:1.4rem;opacity:0.4">/10</span></div>
           <div class="score-bar-wrap">
             <div class="score-bar-bg"><div class="score-bar-fill" id="score-fill" style="width:0%"></div></div>
-            <div class="score-label">Overall resume score</div>
+            <div class="score-label">Overall CV score</div>
           </div>
         </div>
       </div>
@@ -285,7 +285,7 @@ function renderResults(r) {
     </div>
 
     <div style="text-align:center;padding-bottom:2rem">
-      <button class="reset-btn" id="reset-btn">← Analyze another resume</button>
+      <button class="reset-btn" id="reset-btn">← Analyze another CV</button>
       <p class="page-footer">Made with ❤️ by Souvik (@cyberoxic)</p>
     </div>`;
 
