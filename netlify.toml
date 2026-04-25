@@ -1,0 +1,12 @@
+# netlify.toml
+# Tells Netlify how to build and serve your site
+
+[build]
+  publish = "."          # serve files from root folder
+  functions = "netlify/functions"  # where your backend functions live
+
+# Make the function available at /api/analyze
+[[redirects]]
+  from = "/api/analyze"
+  to = "/.netlify/functions/analyze"
+  status = 200

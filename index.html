@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Resume Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- PDF.js — extracts text from PDF in the browser, free & open source -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>AI Resume Analyzer</h1>
+    <p>AI-powered analysis against real job requirements — free via Groq</p>
+  </header>
+    <p style="position: fixed; right: 1rem; bottom: 3rem; color: var(--muted); font-size: 0.95rem;">
+      Made with ❤️ by Souvik (@cyberoxic)
+    </p>
+
+  <div class="container">
+
+    <!-- INPUT -->
+    <div id="input-section">
+
+      <div class="card">
+        <div class="card-label">Your Resume (PDF)</div>
+        <div class="upload-zone" id="dropzone">
+          <input type="file" id="pdf-input" accept=".pdf" />
+          <div class="upload-icon">📄</div>
+          <div class="upload-text"><strong>Click to upload</strong> or drag &amp; drop</div>
+          <div class="upload-text">PDF only · Max 5 MB</div>
+          <div id="file-badge" style="display:none" class="file-badge">
+            ✓ <span id="file-name"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-label">Job Requirements</div>
+        <textarea id="job-desc" placeholder="Paste the job requirements here…&#10;&#10;e.g. Required: Python, SQL, REST APIs, 2+ years experience…"></textarea>
+      </div>
+
+      <button class="analyze-btn" id="analyze-btn" disabled>Analyze Resume</button>
+      <div id="error-msg"></div>
+
+    </div>
+
+    <!-- LOADING -->
+    <div id="loading-section" style="display:none" class="card loading-state">
+      <div class="spinner"></div>
+      <div id="loading-text" style="font-size:0.95rem">Reading your PDF…</div>
+      <div style="font-size:0.82rem;color:var(--muted);margin-top:0.3rem">Usually under 10 seconds</div>
+    </div>
+
+    <!-- RESULTS -->
+    <div id="results-section" style="display:none"></div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
